@@ -4,21 +4,31 @@ $theme-colors: (
         'danger': #F04C25
 );
 
+body,
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 // Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+//LINK TO FONT
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 // Custom code/partials
 
 .content {
-  font-size: 14px;
+  font-size: 16px;
 }
+
+* {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+//NAVBAR
 
 .navbar {
   background-color: red;
-}
-
-.navicons {
-
 }
 
 nav {
@@ -33,6 +43,68 @@ nav {
 
 .center {
   text-align: center;
+}
+
+// INTRODUCTION CARDS
+
+.card {
+  border: 5px solid black;
+}
+
+.card a {
+  color: black;
+}
+
+.card img {
+  max-width:50%;
+  max-height:50%;
+  display: block;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  width: 50%;
+}
+
+//ABOUT OUR MUSIC
+.music img {
+  overflow: hidden;
+  width:300px;
+  height: 300px;
+  border: 5px solid blue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* relevant styles */
+.musicimg {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.musicdescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+
+  transition: opacity .2s, visibility .2s;
+}
+
+.musicimg:hover .musicdescription {
+  visibility: visible;
+  opacity: 1;
 }
 
 
@@ -210,3 +282,33 @@ nav.shift ul li a:hover:after {
     border-radius: 0;
   }
 }
+
+//FOOTER
+
+.footr {
+  background-color: red;
+  bottom: 0;
+  position: relative;
+}
+
+//INDIE
+
+.indiecontainer {
+  border: 5px solid blue;
+}
+
+.contentindie h2{
+  text-decoration: underline;
+}
+
+
+
+//ROCK
+
+//DANCE
+
+//DISCO
+
+//HIP HOP
+
+//RAP
