@@ -4,6 +4,79 @@ $theme-colors: (
         'danger': #F04C25
 );
 
+
+/*opmaak dancePage*/
+
+.container-fluid{
+  padding: 5px;
+  color: #000000;
+}
+
+h1,
+h2{
+  padding: 5px;
+
+}
+
+p,
+li
+{
+  color: orangered;
+}
+.header{
+  padding: 5px;
+  text-align: left;
+  background-color: black;
+  color: orangered;
+}
+
+.container1{
+  padding: 30px;
+  text-align: center;
+  background-color: black;
+  color: orangered;
+  font-size: 100%;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+/*opmaak RapPage*/
+
+body{
+  background-position: center;
+}
+
+.header2{
+  padding: 5px;
+  text-align: left;
+  background-color: #23272b;
+  color: greenyellow;
+}
+
+.container2{
+  padding: 30px;
+  text-align: center;
+  background-color:#23272b;
+  color: greenyellow;
+  font-size: 100%;
+}
+
+.text{
+  color: greenyellow;
+}
+
+
+/*opmaak 404*/
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+
+
+/*opmaak403*/
 // Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
 

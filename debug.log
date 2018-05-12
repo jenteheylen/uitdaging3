@@ -1,0 +1,3 @@
+[0511/204930.002:ERROR:process_info.cc(359)] UncheckedAllocate
+[0511/204930.007:ERROR:file_io.cc(134)] WriteFile: Onvoldoende quotum beschikbaar om de aangevraagde service te voltooien. (0x5AD)
+[0511/204930.009:ERROR:crash_report_exception_handler.cc(116)] WriteEverything failed
