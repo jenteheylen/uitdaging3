@@ -4,6 +4,7 @@ $theme-colors: (
         'danger': #F04C25
 );
 
+<<<<<<< HEAD
 
 /*opmaak dancePage*/
 
@@ -77,21 +78,99 @@ body{
 
 
 /*opmaak403*/
+=======
+body,
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+>>>>>>> e18807f22ff698941d9348d30dc91c30555f5335
 // Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+//LINK TO FONT
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 // Custom code/partials
 
 .content {
-  font-size: 14px;
+  font-size: 16px;
 }
+
+* {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+// INTRODUCTION CARDS
+
+.card {
+  border: 5px solid black;
+}
+
+.card h2 {
+  font-size: 50px;
+}
+
+.card p {
+  font-size: 25px;
+}
+
+.card a {
+  color: black;
+}
+
+.card img {
+  max-width:50%;
+  max-height:50%;
+  display: block;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  width: 50%;
+}
+
+//ABOUT OUR MUSIC
+.music img {
+  overflow: hidden;
+  width:300px;
+  height: 300px;
+  border: 5px solid blue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.musicdescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.musicimg:hover .musicdescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* NAVIGATION BAR */
 
 .navbar {
   background-color: red;
-}
-
-.navicons {
-
 }
 
 nav {
@@ -102,14 +181,6 @@ nav {
   margin-top:1.5rem;
 }
 
-//navbar effect
-
-.center {
-  text-align: center;
-}
-
-
-/* NAVIGATION */
 
 nav ul {
   list-style: none;
@@ -283,3 +354,34 @@ nav.shift ul li a:hover:after {
     border-radius: 0;
   }
 }
+
+//FOOTER
+
+.footr {
+  background-color: darkred;
+  bottom: 0;
+  position: relative;
+  margin-top: 10%;
+}
+
+//INDIE
+
+.indiecontainer {
+  border: 5px solid blue;
+}
+
+.contentindie h2{
+  text-decoration: underline;
+}
+
+
+
+//ROCK
+
+//DANCE
+
+//DISCO
+
+//HIP HOP
+
+//RAP
