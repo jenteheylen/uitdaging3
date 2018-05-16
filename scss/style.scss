@@ -6,7 +6,27 @@ $theme-colors: (
         'dancepage': #FF4500,
         'wit': #FFFFFF,
 );
+/*opmaak disco*/
+@mixin kleurencombinatie($achtergond,$voor) {
+  background-color: $achtergrond;
+  color: $voor;
+}
+.disco{
+  background-color: grey;opacity: 0.9;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+#body{
+  background-repeat: no-repeat;
+  background-size:cover;
+}
 
+#nummers&artiesten{
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 5px;
+}
 
 /*opmaak dancePage*/
 
