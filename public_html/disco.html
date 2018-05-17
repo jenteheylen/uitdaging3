@@ -8,7 +8,7 @@
 
     <title>Disco for Dummies</title>
 </head>
-<body id="body" background="images/bright-disco-illuminated-210838.jpg">
+<body id="discobody" background="images/disco.jpg">
 
 
 
@@ -33,7 +33,7 @@
                     <ul>
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Hiphop</a>
+                                <a href="hiphop.html" class="nav-link">Hiphop</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Disco</a>
@@ -60,10 +60,10 @@
 
 
 
-    <article>
+    <article id="discoinhoud">
         <div  class="container-fluid">
-            <div class="row">
-                <div class="col disco">
+            <div class="rijdisco">
+                <div class="opmaakcol" id="oorsprong">
                     <div>
                         <h2>Oorsprong</h2>
                     </div>
@@ -82,16 +82,17 @@
                     </ul>
 
                 </div>
-                <div class="col disco">
+                <div class="opmaakcol" id="populariteit">
                     <div>
                         <h2>Populariteit</h2>
                     </div>
-                    <p>In de jaren 1973-’74 was de tijd gekomen van de commerciële hoogtijdagen voor disco, dankzij de hits 'Never can say goodbye' van Gloria Gaynor (1973) en 'Rock your baby' van George McCrae (1974).
+                    <p id="prand">In de jaren 1973-’74 was de tijd gekomen van de commerciële hoogtijdagen voor disco, dankzij de hits 'Never can say goodbye' van Gloria Gaynor (1973) en 'Rock your baby' van George McCrae (1974).
                         Met de lancering  van de discofilm Saturday night fever (1977) bereikte de disco-rage zijn absolute hoogtepunt.
-
+                        <button class="btn" id="btn2">Voeg een rand toe</button>
+                        <button class="btn" id="btn3">Verwijder de rand</button>
                 </div>
-                <div class="col disco" >
-                    <div class="disco">
+                <div class="opmaakcol" id="bekendebands/artiesten">
+                    <div>
                         <h2>Bekende bands/artiesten en persoonlijke favoriete nummers</h2>
                     </div>
 
@@ -103,14 +104,13 @@
                         <li>Chic</li>
 
                     </ul>
-                   
-                        <button id="btn1" class="disco">Toon meer bands/artiesten</button>
 
-                    <table id="nummers&artiesten">
+                        <button class="btn" id="btn1">Toon meer bands/artiesten</button>
+
+                    <table id="tabel">
                         <tr>
                             <th>Artiest</th>
                             <th>Nummer</th>
-
                         </tr>
                         <tr>
                             <td>Bee Gees</td>
@@ -159,7 +159,7 @@
     </article>
 
 <!-- Footer -->
-<footer class="footerdisco py-2 bg-dark">
+<footer class="footerdisco py-2 bg-dark" id="onder">
     <div class="container">
         <p class="m-0 text-center text-white"><a href="http://louisvanb.sinners.be/groepsproject/index.html">Onze teamwebsite</a><br>
             <a href="https://www.thomasmore.be/">Thomas More</a><br>
@@ -175,6 +175,7 @@
 </html>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
 <script>
+
     $(document).ready(function(){
         $("#btn1").click(function(){
             $("#artiesten").append("<li>Village People</li>");
@@ -183,6 +184,16 @@
             $("#artiesten").append("<li>Barry White</li>");
             $("#artiesten").append("<li>Earth, Wind & Fire</li>");
 
+        });
+    });
+    $(document).ready(function(){
+        $("#btn2").click(function(){
+            $("p").eq(1).css("border", "1px solid pink");
+        });
+    });
+    $(document).ready(function(){
+        $("#btn3").click(function(){
+            $("p").eq(1).css("border", "none");
         });
     });
 </script>
