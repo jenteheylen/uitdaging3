@@ -37,6 +37,18 @@ $break-large: 1920px;
 
 //MIXINS - MICHIEL
 
+@mixin Homebutton{
+  display: block;
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: none;
+  position: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
+}
+
 
 //MIXINS - JENTE
 
@@ -609,10 +621,566 @@ nav.shift ul li a:hover:after {
     list-style-type: none;
   }
 
-//DANCE
+
+/*OPMAAK DANCEPAGE*/
+
+.dance .rap .container-fluid{
+  padding: 5px;
+  color: #000000;
+}
+
+.dance .text2{
+  color: $orange;
+}
+
+.dance .rap h1,
+.dance  .rap h2{
+  padding: 5px;
+
+}
+
+.dance .header1{
+  padding: 5px;
+  text-align: left;
+  background-color: black;
+  color: orangered;
+}
+.dance  .container1{
+  padding: 30px;
+  text-align: center;
+  background-color: black;
+  color: orangered;
+  font-size: 100%;
+}
+
+.dance .image2{
+  width: 300px;
+  height: auto;
+  float: right;
+  border-radius: 50%;
+  border: 5px solid orangered;
+  -ms-transform: rotate(33deg);
+  -webkit-transform: rotate(33deg);
+  transform: rotate(33deg);
+}
+.dance .animatie{
+  animation: fly linear 0.8s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  -webkit-animation: fly linear 0.8s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: fly linear 0.8s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: fly linear 0.8s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: fly linear 0.8s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes fly{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  15% {
+    transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    transform:  translate(0px,0px)  ;
+  }
+  75% {
+    transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-moz-keyframes fly{
+  0% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  15% {
+    -moz-transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -moz-transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  75% {
+    -moz-transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes fly {
+  0% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  15% {
+    -webkit-transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -webkit-transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  75% {
+    -webkit-transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-o-keyframes fly {
+  0% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  15% {
+    -o-transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -o-transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  75% {
+    -o-transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-ms-keyframes fly {
+  0% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  15% {
+    -ms-transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -ms-transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  75% {
+    -ms-transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+}
+
+
+
+
+h1 {
+  font-weight: 200;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.dance .tabs {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dance .tab-list {
+  padding-bottom: 1rem;
+}
+
+.dance .tab {
+  border: 1px solid orangered;
+  border-radius: 40px;
+  display: inline-block;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  color: white;
+  font-weight: bolder;
+  background: transparent;
+}
+
+.dance .tab.active {
+  color: black;
+  background: orangered;
+  border: 1px solid black;
+}
+
+.dance .tab-content {
+  background: orangered;
+  display: none;
+  padding: 10px;
+  color: black;
+  font-weight: bolder;
+}
+
+.dance .show {
+  display: block;
+}
+
+/*OPMAAK RAPPAGE*/
+.rap .mode {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 30px;
+  z-index: 1;
+  border: 1px solid #000;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.rap .text{
+  color: greenyellow;
+}
+.rap .services{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+  padding: 20px;
+
+}
+
+.rap .services.dark{
+  color: white;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 25vh;
+  padding: 1px;
+  margin-bottom: 45px;
+  margin-top: 40px;
+
+}
+
+.rap .text.dark{
+  color: black;
+}
+.rap .text{
+  color: theme-color($orange)
+}
+.rap .rowRap.dark{
+  padding: auto;
+}
+
+.rap #about.dark{
+  padding: 1px;
+}
+.rap .title.dark{
+  color: white;
+}
+
+.rap .text.animatie.dark{
+  color: white;
+}
+
+.rap .container-fluid.dark{
+  background: white;
+  padding: 5px;
+  width: 75%;
+  border: 3px solid grey;
+}
+
+.rap .header2.dark{
+  color: black;
+  background: white;
+}
+
+.rap #about{
+  padding: 20px;
+}
+.rap .mode li{
+  list-style-type: none;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.rap .mode li span{
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+}
+
+.rap .mode.active li{
+  transform: translateY(-30px);
+}
+
+.rap .mode li span:nth-child(1){
+  background: #262626;
+  color: #fff;
+
+}
+
+body{
+  background-position: center;
+}
+.rap .container3{
+  background-color: transparent;
+}
+
+.rap .image1{
+  margin: 5px;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition:transform .8s ease-in-out ;
+}
+
+.rap .image1:hover{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+
+}
+
+.dance .image1:hover{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+
+}
+
+.dance .image1{
+  margin: 5px;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition:transform .8s ease-in-out ;
+}
+
+.rap .logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.rap .header2{
+  padding: 5px;
+  text-align: left;
+  color: greenyellow;
+  background: grey;
+}
+.rap .container2{
+  padding: 30px;
+  font-size: 100%;
+}
+
+/*OPMAAK 404*/
+
+/*groot scherm*/
+
+@media only screen and (min-width: 1080px) {
+
+  .body404 {
+    height: 100%;
+    background-position: center;!important;
+    background-repeat: no-repeat; !important;
+    background-image: url("http://i66.tinypic.com/15y7jhu.jpg");
+    background-size: cover; !important;
+
+
+  }
+
+  .buttonhome {
+    background-color: grey;
+    color: black;
+    padding: 25px;
+    margin: 5px;
+    border-radius: 25%;
+    position: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+  }
+
+
+  .modal-footer {
+    color: black;
+    width: 100%;
+    text-align: center;
+  }
+  .footer1 {
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: deepskyblue;
+    text-align: center;
+  }
+
+  .buttonhome:hover {
+    background-color: black;
+    color: grey;
+  }
+
+}
+
+/*middelgroot scherm*/
+@media only screen and (min-width: 600px) and (max-width: 1080px) {
+  .body404{
+    background-image: url("http://i64.tinypic.com/2db1hz7.jpg");
+    background-size: cover;
+    background-position: center;
+
+
+  }
+  .body404 h1{
+    color: grey;
+    margin-top: 200px;
+
+
+  }
+  .body404 h2{
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+
+  }
+  .buttonhome {
+    display: block;
+    background-color: transparent;
+    color: white;
+    padding: 25px;
+    margin: 0 auto;
+    border-radius: 25%;
+    position: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+  }
+  .buttonhome:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+  }
+  .footer1 {
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+}
+
+
+
+/*klein scherm*/
+
+@media only screen and (max-width: 600px) {
+  .body404{
+    background-image: url("http://i66.tinypic.com/2e367ic.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #d39e00;
+
+  }
+  .body404 h1{
+    color: darkgoldenrod;
+    margin-top: 150px;
+
+  }
+
+  .body404 h2{
+    color: yellow;
+    margin-top: 15px;
+    text-align: center;
+
+
+  }
+  .buttonhome {
+    @include Homebutton;
+    background-color: seagreen;
+    color: black;
+
+
+  }
+  .buttonhome:hover {
+    background-color: transparent;
+    color: seagreen;
+    border: none;
+  }
+  .footer1 {
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: yellow;
+    text-align: center;
+  }
+}
+
+
+/*opmaak403*/
+
+/*groot scherm*/
+@media only screen and (min-width: 1080px) {
+
+  .fas fa-ban {
+    color: black;
+    background-color: red;
+  }
+  .fa-ban {
+    color: red;
+
+  }
+  .buttonarrow {
+    color: black;
+    background-color: grey;
+    border-radius: 35%;
+  }
+
+  .body403 {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+
 
 //DISCO
 
 //HIP HOP
-
-//RAP
