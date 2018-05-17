@@ -1,564 +1,75 @@
 // Override Bs4 variables and custom mixins
 $theme-colors: (
         'primary': #009CAB,
-        'danger': #F04C25,
-        'rappage': 	#7FFF00,
-        'dancepage': #FF4500,
-        'wit': #FFFFFF,
+        'danger': #F04C25
 );
-/*opmaak disco*/
-@mixin kleurencombinatie($achtergond,$voor) {
-  background-color: $achtergrond;
-  color: $voor;
-}
-.disco{
-  background-color: grey;opacity: 0.9;
-  color: white;
-  margin: 10px;
-  padding: 10px;
-}
-#body{
-  background-repeat: no-repeat;
-  background-size:cover;
-}
 
-#nummers&artiesten{
-  border: 1px solid white;
-  border-collapse: collapse;
-  padding: 5px;
-}
-
-/*opmaak dancePage*/
-
-
-.container-fluid{
-  padding: 5px;
-  color: #000000;
-}
-
-.text2{
-  color: orangered;
-
-}
-
-h1,
-h2{
-  padding: 5px;
-
-}
-
-
-
-.header1{
-  padding: 5px;
-  text-align: left;
-  background-color: black;
-  color: orangered;
-}
-
-.container1{
-  padding: 30px;
-  text-align: center;
-  background-color: black;
-  color: orangered;
-  font-size: 100%;
-}
-
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-.image2{
-  width: 300px;
-  height: auto;
-  float: right;
-  border-radius: 50%;
-  border: 5px solid orangered;
-  -ms-transform: rotate(33deg);
-  -webkit-transform: rotate(33deg);
-  transform: rotate(33deg);
-}
-.animatie{
-  animation: fly linear 0.8s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-  -webkit-animation: fly linear 0.8s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-transform-origin: 50% 50%;
-  -moz-animation: fly linear 0.8s;
-  -moz-animation-iteration-count: 1;
-  -moz-transform-origin: 50% 50%;
-  -o-animation: fly linear 0.8s;
-  -o-animation-iteration-count: 1;
-  -o-transform-origin: 50% 50%;
-  -ms-animation: fly linear 0.8s;
-  -ms-animation-iteration-count: 1;
-  -ms-transform-origin: 50% 50%;
-}
-
-@keyframes fly{
-  0% {
-    transform:  translate(0px,0px)  ;
-  }
-  15% {
-    transform:  translate(0px,-25px)  ;
-  }
-  30% {
-    transform:  translate(0px,0px)  ;
-  }
-  45% {
-    transform:  translate(0px,-15px)  ;
-  }
-  60% {
-    transform:  translate(0px,0px)  ;
-  }
-  75% {
-    transform:  translate(0px,-5px)  ;
-  }
-  100% {
-    transform:  translate(0px,0px)  ;
-  }
-}
-
-@-moz-keyframes fly{
-  0% {
-    -moz-transform:  translate(0px,0px)  ;
-  }
-  15% {
-    -moz-transform:  translate(0px,-25px)  ;
-  }
-  30% {
-    -moz-transform:  translate(0px,0px)  ;
-  }
-  45% {
-    -moz-transform:  translate(0px,-15px)  ;
-  }
-  60% {
-    -moz-transform:  translate(0px,0px)  ;
-  }
-  75% {
-    -moz-transform:  translate(0px,-5px)  ;
-  }
-  100% {
-    -moz-transform:  translate(0px,0px)  ;
-  }
-}
-
-@-webkit-keyframes fly {
-  0% {
-    -webkit-transform:  translate(0px,0px)  ;
-  }
-  15% {
-    -webkit-transform:  translate(0px,-25px)  ;
-  }
-  30% {
-    -webkit-transform:  translate(0px,0px)  ;
-  }
-  45% {
-    -webkit-transform:  translate(0px,-15px)  ;
-  }
-  60% {
-    -webkit-transform:  translate(0px,0px)  ;
-  }
-  75% {
-    -webkit-transform:  translate(0px,-5px)  ;
-  }
-  100% {
-    -webkit-transform:  translate(0px,0px)  ;
-  }
-}
-
-@-o-keyframes fly {
-  0% {
-    -o-transform:  translate(0px,0px)  ;
-  }
-  15% {
-    -o-transform:  translate(0px,-25px)  ;
-  }
-  30% {
-    -o-transform:  translate(0px,0px)  ;
-  }
-  45% {
-    -o-transform:  translate(0px,-15px)  ;
-  }
-  60% {
-    -o-transform:  translate(0px,0px)  ;
-  }
-  75% {
-    -o-transform:  translate(0px,-5px)  ;
-  }
-  100% {
-    -o-transform:  translate(0px,0px)  ;
-  }
-}
-
-@-ms-keyframes fly {
-  0% {
-    -ms-transform:  translate(0px,0px)  ;
-  }
-  15% {
-    -ms-transform:  translate(0px,-25px)  ;
-  }
-  30% {
-    -ms-transform:  translate(0px,0px)  ;
-  }
-  45% {
-    -ms-transform:  translate(0px,-15px)  ;
-  }
-  60% {
-    -ms-transform:  translate(0px,0px)  ;
-  }
-  75% {
-    -ms-transform:  translate(0px,-5px)  ;
-  }
-  100% {
-    -ms-transform:  translate(0px,0px)  ;
-  }
-}
-
-/*Jquery deel*/
-
-
-h1 {
-  font-weight: 200;
-  font-size: 3rem;
-  color: white;
-  text-align: center;
-}
-
-.tabs {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.tab-list {
-  padding-bottom: 1rem;
-}
-
-.tab {
-  border: 1px solid transparent;
-  border-radius: 40px;
-  display: inline-block;
-  text-decoration: none;
-  padding: .5rem 1rem;
-  color: rgba(255, 255, 255, .6);
-  font-weight: 700;
-  background: rgba(10, 20, 30, .2);
-}
-
-.tab.active {
-  color: white;
-  background: rgba(255,255,255,.1);
-  border: 1px solid rgba(255, 255, 255, .6);
-}
-
-.tab-content {
-  background: linear-gradient(to bottom right, white, #F8F8F8);
-  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
-  display: none;
-  padding: 1.5rem;
-  color: #4a5666;
-}
-
-.show {
-  display: block;
-}
-
-
-/*opmaak RapPage*/
-
-.mode {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  margin: 0;
-  padding: 0;
-  width: 100px;
-  height: 30px;
-  z-index: 1;
-  border: 1px solid #000;
-  cursor: pointer;
-  overflow: hidden;
-
-}
-
-.services{
-
-  top: 0;
-  left: 0;
+body,
+html {
+  overflow-x: hidden;
   width: 100%;
-  height: 25vh;
-  padding: 20px;
-
-
-
 }
 
-.services.dark{
-
-  color: white;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: 25vh;
-  padding: 1px;
-  margin-bottom: 45px;
-  margin-top: 40px;
-
-}
-
-
-
-.text.dark{
-  color: black;
-}
-.text{
-  color: greenyellow;
-}
-
-.rowRap.dark{
-  padding: auto;
-}
-
-#about.dark{
-  padding: 1px;
-}
-.title.dark{
-  color: white;
-}
-
-
-
-
-.text.animatie.dark{
-  color: white;
-
-
-}
-
-
-
-
-
-.container-fluid.dark{
-  background: white;
-  padding: 5px;
-  width: 75%;
-  border: 3px solid grey;
-
-
-
-
-}
-
-.header2.dark{
-  color: black;
-  background: white;
-}
-
-
-
-
-#about{
-  padding: 20px;
-}
-.mode li{
-  list-style-type: none;
-  width: 100%;
-  height: 60px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-}
-.mode li span{
-  display: block;
-  height: 30px;
-  line-height: 30px;
-  width: 100%;
-
-}
-
-.mode.active li{
-  transform: translateY(-30px);
-}
-
-.mode li span:nth-child(1){
-  background: #262626;
-  color: #fff;
-
-}
-
-
-body{
-  background-position: center;
-}
-.container3{
-  background-color: transparent;
-}
-
-.image1{
-  margin: 5px;
-  border-radius: 50%;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  transition:transform .8s ease-in-out ;
-
-}
-
-.image1:hover{
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-
-}
-.logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-}
-
-.header2{
-  padding: 5px;
-  text-align: left;
-  color: greenyellow;
-  background: grey;
-
-
-}
-
-.container2{
-  padding: 30px;
-
-
-
-  font-size: 100%;
-}
-
-.text{
-
-}
-
-
-/*opmaak 404*/
-
-.buttonhome{
-  background-color: grey;
-  color: black;
-  padding: 25px;
-  margin: 5px;
-  border-radius: 25%;
-  position: center;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-
-}
-.body404{
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-
-.modal-footer{
-  color: black;
-  width: 100%;
-  text-align: center;
-}
-
-.footer1 {
-  padding: 10px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: grey;
-  color: deepskyblue;
-  text-align: center;
-}
-
-.error-template{
-
-  color: white;
-}
-
-.buttonhome:hover{
-  background-color: black;
-  color: grey;
-}
-
-.error-template {padding: 40px 15px;text-align: center;}
-.error-actions {margin-top:15px;margin-bottom:15px;}
-.error-actions .btn { margin-right:10px; }
-
-
-/*opmaak403*/
-
-.fas fa-ban{
-  color: black;
-  background-color: red;
-}
-.fa-ban{
-  color: red;
-
-}
-.buttonarrow{
-  color: black;
-  background-color: grey;
-  border-radius: 35%;
-}
-
-.body403{
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
 // Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+//LINK TO FONT
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 // Custom code/partials
 
-.content {
-  font-size: 14px;
+
+
+//VARIABLES
+
+$break-small: 320px;
+$break-mid: 1000px;
+$break-mid2: 1250px;
+$break-large: 1920px;
+
+//MIXINS - LOUIS
+@mixin tekstgroot {
+  font-size: 50px;
 }
 
-.navbar {
-  background-color: red;
+@mixin tekstmid {
+  font-size: 20px;
 }
 
-.navicons {
+//MIXINS - MICHIEL
+
+
+//MIXINS - JENTE
+
+
+//ALGEMENE OPMAAK
+
+.musicbody {
+  background:rgba(102, 0, 0, 0.1)
+}
+
+@media screen and (max-width: $break-mid2) {
+
 
 }
+/* NAVIGATION BAR */
 
 nav {
   height: 4rem;
+
+}
+
+.navigatie {
+  background-color: black;
+  border-bottom: 1px solid grey;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
 }
 
 .navbar-nav {
   margin-top:1.5rem;
+
 }
-
-//navbar effect
-
-.center {
-  text-align: center;
-}
-
-/*------------------------------------------------------------*/
-.navbar-default {
-  border-color:#d39e00;
-}
-
-
-
-/*------------------------------------------------------------*/
-
-
-/* NAVIGATION */
-
 
 
 nav ul {
@@ -572,11 +83,14 @@ nav ul li a {
   display: block;
   padding: 15px;
   text-decoration: none;
-  color: #aaa;
+  color: black;
   font-weight: 800;
   text-transform: uppercase;
   margin: 0 10px;
 }
+
+//NAVBAR ANIMATION
+
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
@@ -586,6 +100,9 @@ nav ul li a:hover {
   color: #555;
 }
 
+nav ul li a:active {
+  color: white;
+}
 
 /* stroke */
 nav.stroke ul li a,
@@ -677,7 +194,6 @@ nav.shift ul li a:after {
   content: '.';
   color: transparent;
   background: #F1C40F;
-  visibility: none;
   opacity: 0;
   z-index: -1;
 }
@@ -686,8 +202,6 @@ nav.shift ul li a:hover:after {
   visibility: visible;
   height: 100%;
 }
-
-
 
 /* Keyframes */
 @-webkit-keyframes fill {
@@ -703,6 +217,16 @@ nav.shift ul li a:hover:after {
     width: 100%;
     height: 100%;
     background: #333;
+  }
+}
+//navbar mediaquery
+@media screen and (max-width: $break-small) {
+  .navigatie a {
+    color: black;
+  }
+
+  .nav-item {
+    color: black
   }
 }
 
@@ -733,3 +257,362 @@ nav.shift ul li a:hover:after {
     border-radius: 0;
   }
 }
+
+//INTRO
+
+.intro .content {
+  font-size: 16px;
+  margin-right: 15%;
+}
+
+.intro header {
+  margin-top: 10%;
+  margin-left: 2.5%;
+  margin-right: -2.5%;
+}
+
+* {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.intro .center {
+  text-align: center;
+}
+
+.intro .image {
+  border: 5px solid black;
+  border-radius: 5px;
+  margin-top: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+//INTRO MEDIAQUERIES
+@media screen and (max-width: $break-small) {
+  .intro .content {
+    background: rgba(0,0,0,.5);
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .introimg {
+    display: none;
+  }
+
+}
+
+
+
+//HOMEPAGE - INTRODUCTION CARDS
+
+.intro .card {
+  border: 5px solid black;
+  padding: 5%;
+  margin-left: 15%;
+}
+
+.intro .card h2 {
+  @include tekstgroot;
+  //font-size: 50px;
+}
+
+.intro .card p {
+  @include tekstmid;
+  //font-size: 20px;
+}
+
+.intro .card a {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+
+.intro .card img {
+
+  max-width: 450px;
+  max-height: 450px;
+  display: block;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+}
+
+.intro .maincontainer {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+//HOMEPAGE - INTRO CARD BUTTONS
+
+.team button {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.team button:hover {
+  cursor: pointer;
+}
+
+.team button:active {
+  padding: 3px;
+  box-shadow: 2px 2px 2px;
+}
+
+//HOMEPAGE - INTRODUCTION CARD MEDIAQUERIES
+
+
+@media screen and (max-width: $break-mid2) {
+ .intro .maincontainer {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .intro .card {
+    border: none;
+    display:inline-block;
+    background: rgba(0,0,0,.01);
+  }
+
+
+  .intro .card img {
+    border: 2px solid black;
+    border-radius: 50%;
+
+
+  }
+}
+
+@media screen and (max-width: $break-small) {
+
+  .intro .card img {
+
+  }
+
+  .intro .container .image {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+//HOMEPAGE - ABOUT OUR MUSIC
+
+.music {
+  margin-right: 15%;
+  margin-left: 15%;
+
+}
+
+.music img {
+  overflow: hidden;
+  width:300px;
+  height: 300px;
+  border: 5px solid black;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+//OUR MUSIC HOVER EFFECT
+.music .image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+
+.music .container:hover .image {
+  width: 350px;
+  height: 350px;
+  box-shadow: 5px 5px 5px;
+}
+
+.music .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.music .container:hover .middle {
+  top: 50%;
+  left: 55%;
+}
+
+.music .container:hover {
+  cursor: pointer;
+
+}
+
+.music .container:hover .image {
+  opacity: 0.3;
+
+}
+
+.music .container:hover .middle {
+  opacity: 1;
+}
+
+ .music .textdisco {
+  background-color: transparent;
+  color: yellow;
+  font-size: 50px;
+}
+
+.music .container {
+  margin-top: 5%;
+}
+
+//MEDIAQUERY OUR MUSIC
+
+@media screen and (max-width: $break-mid) {
+  .music .image {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    min-width: 200px;
+    min-height: 200px;
+  }
+}
+  @media screen and (max-width: $break-mid2) {
+    .music .image {
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      min-width: 200px;
+      min-height: 200px;
+    }
+
+  .music .container {
+    margin: 5%;
+
+  }
+
+}
+
+@media screen and (max-width: $break-small) {
+  .music img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    min-width: 200px;
+    min-height: 200px;
+  }
+
+  .music .container {
+    margin: 5%;
+
+  }
+}
+
+
+
+
+//FOOTER
+
+.footr {
+  border-top: 1px solid grey;
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  bottom: 0;
+  overflow:hidden;
+  clear: both;
+}
+
+
+.footr img {
+  overflow: hidden;
+  max-height: 20px;
+}
+
+
+.footr p {
+  color: white;
+}
+
+//INDIE
+
+.achtergrond {
+  background-position: center;
+  font-color: white;
+
+}
+
+.achtergrond img {
+  filter: brightness(50%);
+}
+
+.indie .contentindie h2{
+  text-decoration: underline;
+}
+
+.indie .contentindie {
+
+  color: yellow;
+  background: rgba(0,0,0,.5);
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top:5%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.indie .indietekst ul li{
+  list-style-type: none;
+}
+
+.indiefootr .footr{
+  position: absolute;
+}
+
+//INDIE MEDIAQUERY
+
+
+//ROCK
+
+  .rock .footr {
+    position: absolute;
+  }
+
+  .rock .rockcontainer {
+    color: yellow;
+    background: rgba(0,0,0,.5);
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top:2%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 30px;
+  }
+  
+  .rock h2 {
+    text-decoration: underline;
+  }
+
+  .rock ul li {
+    list-style-type: none;
+  }
+
+//DANCE
+
+//DISCO
+
+//HIP HOP
+
+//RAP
