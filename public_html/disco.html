@@ -8,7 +8,7 @@
 
     <title>Disco for Dummies</title>
 </head>
-<body id="body" background="images/bright-disco-illuminated-210838.jpg">
+<body id="discobody" background="images/disco.jpg">
 
 
 
@@ -30,13 +30,13 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Hiphop</a>
+                                <a href="hiphop.html" class="nav-link">Hiphop</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Disco</a>
+                                <a href="disco.html" class="nav-link">Disco</a>
                             </li>
                             <li class="nav-item">
-                                <a href="dancePage.html" class="nav-link">Dance</a>
+                                <a href="dance.html" class="nav-link">Dance</a>
                             </li>
                             <li class="nav-item">
                                 <a href="rap.html" class="nav-link">Rap</a>
@@ -64,8 +64,8 @@
 
     <article>
         <div  class="container-fluid">
-            <div class="row">
-                <div class="col disco">
+            <div class="rijdisco">
+                <div class="opmaakcol">
                     <div>
                         <h2>Oorsprong</h2>
                     </div>
@@ -84,16 +84,19 @@
                     </ul>
 
                 </div>
-                <div class="col disco">
+                <div class="opmaakcol">
                     <div>
                         <h2>Populariteit</h2>
                     </div>
-                    <p>In de jaren 1973-’74 was de tijd gekomen van de commerciële hoogtijdagen voor disco, dankzij de hits 'Never can say goodbye' van Gloria Gaynor (1973) en 'Rock your baby' van George McCrae (1974).
+                    <p id="prand">In de jaren 1973-’74 was de tijd gekomen van de commerciële hoogtijdagen voor disco, dankzij de hits 'Never can say goodbye' van Gloria Gaynor (1973) en 'Rock your baby' van George McCrae (1974).
                         Met de lancering  van de discofilm Saturday night fever (1977) bereikte de disco-rage zijn absolute hoogtepunt.
-
+                    <div>
+                        <button class="btn" id="btn2">Voeg een rand toe</button>
+                        <button class="btn" id="btn3">Verwijder de rand</button>
                 </div>
-                <div class="col disco" >
-                    <div class="disco">
+                </div>
+                <div class="opmaakcol" >
+                    <div class="opmaakcol">
                         <h2>Bekende bands/artiesten en persoonlijke favoriete nummers</h2>
                     </div>
 
@@ -105,8 +108,8 @@
                         <li>Chic</li>
 
                     </ul>
-                   
-                        <button id="btn1" class="disco">Toon meer bands/artiesten</button>
+
+                        <button id="btn1" class="btn">Toon meer bands/artiesten</button>
 
                     <table id="nummers&artiesten">
                         <tr>
@@ -160,23 +163,22 @@
         </div>
     </article>
 
-<!-- Footer -->
-<footer class="footr">
-    <div class="text-center">
+
+
+    <footer class="footr">
+        <div class="footer-copyright py-3 text-center">
+            <a href="http://louisvanb.sinners.be/groepsproject/index.html">Contacteer ons</a>
+            <br>
+            <a href="https://www.thomasmore.be/">Thomas more</a>
+            <br>
+            <p>Gemaakt door: Jente Heylen</p>
+
+        </div>
+        <img src="images/jello3grey.svg" alt="logo" class="footrimg" id="bounce">
+    </footer>
+
 
     </div>
-    <div class="footer-copyright py-3 text-center">
-        <a href="http://louisvanb.sinners.be/groepsproject/index.html">Contacteer ons</a>
-        <br>
-        <a href="https://www.thomasmore.be/">Thomas more</a>
-        <br>
-        <p>Gemaakt door: NAAM</p>
-    </div>
-</footer>
-</div>
-
-
-
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
@@ -189,6 +191,16 @@
             $("#artiesten").append("<li>Barry White</li>");
             $("#artiesten").append("<li>Earth, Wind & Fire</li>");
 
+        });
+    });
+    $(document).ready(function(){
+        $("#btn2").click(function(){
+            $("p").eq(1).css("border", "1px solid pink");
+        });
+    });
+    $(document).ready(function(){
+        $("#btn3").click(function(){
+            $("p").eq(1).css("border", "none");
         });
     });
 </script>

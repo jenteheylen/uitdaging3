@@ -9443,6 +9443,167 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+/*opmaak hiphop*/
+@media only screen and (max-width: 600px) {
+  #hiphopbody {
+    background-image: none;
+    background-color: #D4DD73;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1080px) {
+  #hiphopbody {
+    background-image: none;
+    background-color: #0087A0;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  #hiphopbody {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #onder {
+    margin-top: 7%;
+  }
+}
+
+.rijhiphop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-top: 65px;
+}
+
+#bounce:hover {
+  -webkit-animation: bounce 1s;
+          animation: bounce 1s;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+/*opmaak disco*/
+@media only screen and (max-width: 600px) {
+  #discobody {
+    background-image: none;
+    background-color: #24FEFC;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1080px) {
+  #discobody {
+    background-image: none;
+    background-color: #E7D8F7;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  #discobody {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #onder {
+    margin-top: 7%;
+  }
+}
+
+.rijdisco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-top: 65px;
+}
+
+.opmaakcol {
+  background-color: grey;
+  opacity: 0.9;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  -webkit-transition: background-color 2s;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.opmaakcol:hover {
+  background-color: black;
+  opacity: 0.9;
+}
+
+#tabel {
+  margin: 10px;
+}
+
+.btn {
+  background-color: grey;
+  opacity: 0.9;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 9px #999;
+          box-shadow: 0 9px #999;
+  -webkit-transition: background-color 2s;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 5px #666;
+          box-shadow: 0 5px #666;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  background-color: black;
+  opacity: 0.9;
+}
+
+#prand {
+  padding: 5px;
+}
+
+dance #about .text {
+  color: #FF4500;
+  font-size: x-large;
+}
+
 /*groot scherm*/
 @media only screen and (min-width: 1080px) {
   .dance .image1:hover {
