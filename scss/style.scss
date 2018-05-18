@@ -159,6 +159,10 @@ $green:greenyellow;
     display: block;
   }
 
+  .dance .container3 img {
+    background-color: transparent;
+    margin-top: 80px;
+  }
 }
 
 /*middelgroot scherm*/
@@ -251,6 +255,11 @@ $green:greenyellow;
 
   }
 
+  .dance .container3 img {
+    background-color: transparent;
+    margin-top: 80px;
+  }
+
 
 
 
@@ -267,6 +276,12 @@ $green:greenyellow;
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 
+
+  }
+
+  .dance .container3 img {
+    background-color: transparent;
+    margin-top: 80px;
   }
   .dance .container-fluid{
     padding: 5px;
@@ -394,8 +409,9 @@ $green:greenyellow;
     padding: 30px;
     font-size: 100%;
   }
-  .rap .container3 {
+  .rap .container3 img {
     background-color: transparent;
+    margin-top: 80px;
   }
 
   .rap .image1 {
@@ -513,6 +529,11 @@ $green:greenyellow;
     background-image: url("http://i65.tinypic.com/3gfbn.jpg");
 
 
+  }
+
+  .rap .container3 img {
+    background-color: transparent;
+    margin-top: 80px;
   }
 
   .rap .dark{
