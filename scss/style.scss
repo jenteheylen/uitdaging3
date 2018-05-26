@@ -46,119 +46,6 @@ $break-large: 1920px;
 
 
 //ALGEMENE OPMAAK
-//disco
-@media only screen and (max-width: 600px) {
-
-  #discobody {
-    background-image: none;
-    background-color: #24FEFC;
-  }
-
-}
-@media only screen and (min-width: 600px) and (max-width: 1080px)  {
-
-
-  #discobody {
-    background-image: none;
-    background-color: #E7D8F7;
-  }
-
-
-
-}
-@media only screen and (min-width: 1080px) {
-  #discobody{
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #onder{
-    margin-top: 7%;
-  }
-}
-.rijdisco{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.opmaakcol{
-  background-color: grey;opacity: 0.9;
-  color: white;
-  margin: 10px;
-  padding: 10px;
-  -webkit-transition: background-color 2s;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 100%;
-}
-.opmaakcol:hover{
-  background-color: black;opacity: 0.9;
-}
-
-#tabel{
-
-  margin: 10px;
-}
-
-.btn{
-  background-color: grey;opacity: 0.9;
-  color: white;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  -webkit-transition: background-color 2s;
-}
-.btn:hover{
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-  background-color: black;opacity: 0.9;
-}
-#prand{
-  padding: 5px;
-}
-//hiphop
-@media only screen and (max-width: 600px) {
-
-  #hiphopbody {
-    background-image: none;
-    background-color: #D4DD73;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 1080px)  {
-
-
-  #hiphopbody {
-    background-image: none;
-    background-color: #0087A0;
-  }
-}
-@media only screen and (min-width: 1080px) {
-  #hiphopbody{
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #onder{
-
-    margin-top: 7%;
-  }
-}
-.rijhiphop{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
 
 //RAP
 // Override Bs4 variables and custom mixins
@@ -272,6 +159,10 @@ $green:greenyellow;
     display: block;
   }
 
+  .dance .container3 img {
+    background-color: transparent;
+    margin-top: 80px;
+  }
 }
 
 /*middelgroot scherm*/
@@ -364,6 +255,11 @@ $green:greenyellow;
 
   }
 
+  .dance .container3 img {
+    background-color: transparent;
+    margin-top: 80px;
+  }
+
 
 
 
@@ -380,6 +276,11 @@ $green:greenyellow;
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 
+  }
+
+  .dance .container3 img {
+    background-color: transparent;
+    margin-top: 80px;
   }
   .dance .container-fluid{
     padding: 5px;
@@ -511,8 +412,9 @@ $green:greenyellow;
     padding: 30px;
     font-size: 100%;
   }
-  .rap .container3 {
+  .rap .container3 img {
     background-color: transparent;
+    margin-top: 80px;
   }
 
   .rap .image1 {
@@ -632,6 +534,11 @@ $green:greenyellow;
 
   }
 
+  .rap .container3 img {
+    background-color: transparent;
+    margin-top: 80px;
+  }
+
   .rap .dark{
     background-image: none;
 
@@ -749,9 +656,11 @@ $green:greenyellow;
       background-image: none;
       background-color: white;
     }
-    .bg.dark{
 
 
+    .rap .container3 img {
+      background-color: transparent;
+      margin-top: 80px;
     }
 
     .rap .mode {
@@ -847,6 +756,8 @@ $green:greenyellow;
 
   }
 
+
+
   /*opmaak 404*/
 
   /*groot scherm*/
@@ -854,7 +765,7 @@ $green:greenyellow;
   @media only screen and (min-width: 1080px) {
 
     .body404 {
-      height: 100%;
+
       background-position: center;
       background-repeat: no-repeat;
       background-image: url("http://i66.tinypic.com/15y7jhu.jpg");
@@ -1047,6 +958,7 @@ $green:greenyellow;
 
   .navbar {
     background-color: red;
+
   }
 
   .navicons {
@@ -1718,19 +1630,30 @@ $green:greenyellow;
   //FOOTER
 
   .footr {
+    display: inline-block;
+    line-height: 40px;
+    vertical-align: top;
     border-top: 1px solid grey;
     background-color: black;
     bottom: 0;
     width: 100%;
-    bottom: 0;
     overflow: hidden;
     clear: both;
+
+
   }
 
   .footr img {
+    display: inline-block;
     overflow: hidden;
-    max-height: 20px;
+    width: 20vw;
+
+
+
+
   }
+
+  .foo
 
   .footr p {
     color: white;
